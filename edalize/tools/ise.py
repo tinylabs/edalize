@@ -108,7 +108,7 @@ class Ise(Edatool):
                     src_files.append ("xfile add {} -lib_vhdl {}\n".format (f.name, f.logical_name))
                 else:
                     cmd = "xfile add"
-            elif file_type == "tclSource":
+            elif file_type == "iseTclSource":
                 cmd = "source"
             elif file_type == "edif":
                 cmd = "xfile add"
