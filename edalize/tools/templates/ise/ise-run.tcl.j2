@@ -1,0 +1,10 @@
+puts "Compiling {{ name }} using Xilinx ISE"
+project open {{ name }}
+
+process run "Translate"
+process run "Map"
+process run "Place & Route"
+#process run "Implement Design" -force rerun_all
+process run "Generate Programming File"
+
+project close
